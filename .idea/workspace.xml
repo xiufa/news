@@ -19,13 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6675cfe8-47f2-4cbf-bcda-6f6af52dec1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/news-1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/o2oboot/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6675cfe8-47f2-4cbf-bcda-6f6af52dec1b" name="Default Changelist" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/o2oboot/dao/AdminDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/o2oboot/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/o2oboot/entity/Admin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +82,16 @@
       <option name="presentableId" value="Default" />
       <updated>1592913624817</updated>
       <workItem from="1593241467268" duration="327000" />
+      <workItem from="1593241807976" duration="301000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1593241840135</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593241840135</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +107,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1593241519973">
@@ -111,5 +122,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1593241791746" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1593241853431">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1593241853431" />
   </component>
 </project>
