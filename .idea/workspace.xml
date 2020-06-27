@@ -10,7 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6675cfe8-47f2-4cbf-bcda-6f6af52dec1b" name="Default Changelist" comment="commit Message" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,33 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592913624817</updated>
-      <workItem from="1593229034547" duration="5381000" />
-      <workItem from="1593235067893" duration="1215000" />
-      <workItem from="1593236538997" duration="3740000" />
-      <workItem from="1593251236108" duration="822000" />
-    </task>
-    <task id="LOCAL-00001" summary="commit Message">
-      <created>1593233616471</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1593233616471</updated>
-    </task>
-    <task id="LOCAL-00002" summary="commit Message">
-      <created>1593251480843</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1593251480843</updated>
-    </task>
-    <task id="LOCAL-00003" summary="commit Message">
-      <created>1593252027528</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1593252027528</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,8 +97,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit Message" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit Message" />
+
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1593230888377">
@@ -150,6 +123,6 @@
     <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1593252038705">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1593252038705" />
+
   </component>
 </project>
