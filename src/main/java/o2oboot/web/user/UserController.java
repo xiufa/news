@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -24,12 +23,12 @@ public class UserController {
     public Map<String,Object> checkUserId (HttpServletRequest request){
         String userID=request.getParameter("userID");
 
-        User user = userService.checkUserID(userID);
+        int s = userService.checkUserID(userID);
         Map<String,Object> map = new HashMap<>();
-        if(user == null){
-            map.put("success",true);
-        }else{
+        if(s<1){
             map.put("success",false);
+        }else{
+            map.put("success",true);
         }
         return map;
     }
@@ -45,10 +44,10 @@ public class UserController {
         User user=new User(userID,userName,password,gender);
         int s=userService.addUser(user);
         Map<String,Object> map = new HashMap<>();
-        if(s==1){
-            map.put("success",true);
-        }else{
+        if(s<1){
             map.put("success",false);
+        }else{
+            map.put("success",true);
         }
         return map;
     }
@@ -61,10 +60,10 @@ public class UserController {
 
         int s=userService.checkUserSingIn(userID,password);
         Map<String,Object> map = new HashMap<>();
-        if(s==1){
-            map.put("success",true);
-        }else{
+        if(s<1){
             map.put("success",false);
+        }else{
+            map.put("success",true);
         }
         return map;
     }
@@ -74,9 +73,9 @@ public class UserController {
     public Map<String,Object> userDetail (HttpServletRequest request){
         String userID=request.getParameter("userID");
 
-        List<User> list=userService.getUserDetail(userID);
+        User user=userService.getUserDetail(userID);
         Map<String,Object> map = new HashMap<>();
-        map.put("userDetail",list);
+        map.put("userDetail",user);
         return map;
     }
 
@@ -91,10 +90,10 @@ public class UserController {
         User user=new User(userID,userName,password,gender);
         int s=userService.modifyUser(user);
         Map<String,Object> map = new HashMap<>();
-        if(s==1){
-            map.put("success",true);
-        }else{
+        if(s<1){
             map.put("success",false);
+        }else{
+            map.put("success",true);
         }
         return map;
     }
