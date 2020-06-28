@@ -1,7 +1,7 @@
 package o2oboot.entity;
 
 public class Admin {
-    private String adminID;
+    private String adminId;
     private String adminPassword;
     private String adminName;
     private String gender;
@@ -10,18 +10,18 @@ public class Admin {
     }
 
     public Admin(String adminID, String adminPassword, String adminName, String gender) {
-        this.adminID = adminID;
+        this.adminId = adminID;
         this.adminPassword = adminPassword;
         this.adminName = adminName;
         this.gender = gender;
     }
 
-    public String getAdminID() {
-        return adminID;
+    public String getAdminId() {
+        return adminId;
     }
 
-    public void setAdminID(String adminID) {
-        this.adminID = adminID;
+    public void setAdminId(String adminId) {
+        this.adminId = adminId;
     }
 
     public String getAdminPassword() {

@@ -1,12 +1,14 @@
 package o2oboot.entity;
 
+import java.util.Date;
+
 public class News {
     private Long newsId;
     private String newsName;
     private NewsCategory newsCategory;
     private Integer views;
     private Integer priority;
-
+    private Date createTime;
     public News() {
     }
 
@@ -16,6 +18,14 @@ public class News {
         this.newsCategory = newsCategory;
         this.views = views;
         this.priority = priority;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 
     public Long getNewsId() {

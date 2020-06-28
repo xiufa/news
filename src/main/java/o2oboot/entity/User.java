@@ -1,7 +1,7 @@
 package o2oboot.entity;
 
 public class User {
-    private String userID;
+    private String userId;
     private String username;
     private String password;
     private String gender;
@@ -10,18 +10,18 @@ public class User {
     }
 
     public User(String userID, String username, String password, String gender) {
-        this.userID = userID;
+        this.userId = userID;
         this.username = username;
         this.password = password;
         this.gender = gender;
     }
 
-    public String getUserID() {
-        return userID;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {

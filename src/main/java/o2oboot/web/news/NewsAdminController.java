@@ -26,7 +26,7 @@ public class NewsAdminController {
     @Autowired
     private NewsService newsService;
 
-    @RequestMapping(value="/news/newsList",method = RequestMethod.GET)
+    @RequestMapping(value="/newsList",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> getNewsList(@Param("pageIndex")int pageIndex, @Param("pageSize") int pageSize, HttpServletRequest request){
         String newsCategoryId=request.getParameter("newsCategoryId");
