@@ -9,9 +9,9 @@ public interface UserService {
 
     int checkUserSingIn(String userID, String password);
 
-    User checkUserID(String userID);
+    int checkUserID(String userID);
 
-    List<User> getUserDetail(String userID);
+    User getUserDetail(String userID);
 
     int modifyUser(User user);
 }
