@@ -1,8 +1,8 @@
 package o2oboot.config.redis;
 
-import dlnu.o2oboot.cache.JedisLockUtil;
-import dlnu.o2oboot.cache.JedisPoolWriper;
-import dlnu.o2oboot.cache.JedisUtil;
+import o2oboot.cache.JedisLockUtil;
+import o2oboot.cache.JedisPoolWriper;
+import o2oboot.cache.JedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

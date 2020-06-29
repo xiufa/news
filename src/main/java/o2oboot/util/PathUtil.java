@@ -1,7 +1,5 @@
 package o2oboot.util;
 
-import javax.xml.ws.Service;
-
 public class PathUtil {
 
     private static String seperator=System.getProperty("file.separator");
