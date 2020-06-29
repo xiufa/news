@@ -10,7 +10,49 @@
     <select />
   </component>
   <component name="ChangeListManager">
-
+    <list default="true" id="6675cfe8-47f2-4cbf-bcda-6f6af52dec1b" name="Default Changelist" comment="commit Message">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/o2oboot/config/dao/EncryptPropertyPlaceholderConfigurerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/o2oboot/config/dao/EncryptPropertyPlaceholderConfigurerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/o2oboot/config/redis/RedisConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/o2oboot/config/redis/RedisConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/o2oboot/util/PathUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/o2oboot/util/PathUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/awardlist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/myawarddetail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/mypoint.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/myrecord.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/pointrecord.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/productdetail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shopdetail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shoplist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/accountbind.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/changepsw.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/product/productcategorylist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/product/productlist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/product/productoperation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/awarddelivercheck.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/awardmanagement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/awardoperation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/operationfail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/operationsuccess.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productbuycheck.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopOperation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopauthedit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopauthmanagement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopmanagement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/usershopcheck.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,24 +91,35 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/o2oboot/entity" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/o2oboot/web" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\News\src\main\java\o2oboot\web" />
+      <recent name="D:\IdeaProjects\News\src\main\java\o2oboot\service" />
+      <recent name="D:\IdeaProjects\News\src\main\java\o2oboot\dao" />
       <recent name="D:\IdeaProjects\News\src\main\java\o2oboot\entity" />
       <recent name="C:\Users\63296\IdeaProjects\news\src\main" />
-      <recent name="C:\Users\63296\IdeaProjects\news\src\main\resources" />
-      <recent name="C:\Users\63296\IdeaProjects\news\src\main\java" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="O2oApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="news" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="o2oboot.O2oApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -78,7 +131,74 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592913624817</updated>
-
+      <workItem from="1593229034547" duration="5381000" />
+      <workItem from="1593235067893" duration="1215000" />
+      <workItem from="1593236538997" duration="3740000" />
+      <workItem from="1593251236108" duration="2136000" />
+      <workItem from="1593305874741" duration="1285000" />
+      <workItem from="1593307296646" duration="1325000" />
+      <workItem from="1593311371086" duration="14405000" />
+      <workItem from="1593386352060" duration="5658000" />
+      <workItem from="1593422835366" duration="1704000" />
+      <workItem from="1593432481073" duration="650000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit Message">
+      <created>1593233616471</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593233616471</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit Message">
+      <created>1593251480843</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593251480843</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit Message">
+      <created>1593252027528</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593252027528</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit Message">
+      <created>1593252157296</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593252157296</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit Message">
+      <created>1593306096964</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593306096964</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit Message">
+      <created>1593306103682</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593306103682</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit Message">
+      <created>1593336212799</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593336212799</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit Message">
+      <created>1593336249529</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1593336249529</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,13 +217,23 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit Message" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit Message" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1593230888377">
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593398658169">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1593230888377" />
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1593398658169" />
+    <state x="503" y="218" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593335397028">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="503" y="218" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1593335397028" />
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1593328945706">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1593328945706" />
     <state x="544" y="310" width="448" height="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593230719669">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -116,13 +246,37 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="618" y="329" key="Github.Dialog.Accounts.Choose/0.0.1536.834@0.0.1536.834" timestamp="1593236650754" />
-    <state x="112" y="89" key="SettingsEditor" timestamp="1593251648487">
+    <state x="299" y="72" key="Maven.ArtifactSearchDialog" timestamp="1593388195231">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="112" y="89" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1593251648487" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1593252038705">
+    <state x="299" y="72" key="Maven.ArtifactSearchDialog/0.0.1536.834@0.0.1536.834" timestamp="1593388195231" />
+    <state x="403" y="178" key="MultipleFileMergeDialog" timestamp="1593306127657">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-
+    <state x="403" y="178" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1593306127657" />
+    <state x="499" y="137" key="RollbackChangesDialog" timestamp="1593432508421">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="137" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1593432508421" />
+    <state x="112" y="0" key="SettingsEditor" timestamp="1593412269653">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="112" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1593412269653" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1593336277111">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1593336277111" />
+    <state x="563" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593306159886">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="563" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1593306159886" />
+    <state x="477" y="204" key="git4idea.merge.GitPullDialog" timestamp="1593398635444">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="477" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1593398635444" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1593312010580">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1593312010580" />
   </component>
 </project>

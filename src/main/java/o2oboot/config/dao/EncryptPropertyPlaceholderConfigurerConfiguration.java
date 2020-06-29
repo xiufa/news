@@ -3,7 +3,7 @@ package o2oboot.config.dao;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
-import dlnu.o2oboot.util.EncryptPropertyPlaceholderConfigurer;
+import o2oboot.util.EncryptPropertyPlaceholderConfigurer;
 
 @Configuration
 public class EncryptPropertyPlaceholderConfigurerConfiguration {
