@@ -7,8 +7,8 @@ import java.util.List;
 
 public interface UserDao {
     int insertUser(User user);
-    int queryUserSignIn(@Param("userID") String userID, @Param("password")String password);
-    int queryUserById(@Param("userID") String userID);
-    User queryUser(@Param("userID") String userID);
+    int queryUserSignIn(@Param("userID") String userId, @Param("password")String password);
+    int queryUserById(@Param("userID") String userId);
+    User queryUser(@Param("userID") String userId);
     int updateUser(User user);
 }

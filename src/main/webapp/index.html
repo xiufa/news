@@ -20,42 +20,42 @@
                 $(this).removeClass('h-light');
             });
 
-            $("#username").focus(function(){
-                var username = $(this).val();
-                if(username=='输入账号'){
+            $("#userId").focus(function(){
+                var userId = $(this).val();
+                if(userId=='输入账号'){
                     $(this).val('');
                 }
             });
 
-            $("#username").focusout(function(){
-                var username = $(this).val();
-                if(username==''){
+            $("#userId").focusout(function(){
+                var userId = $(this).val();
+                if(userId==''){
                     $(this).val('输入账号');
                 }
             });
 
 
             $("#password").focus(function(){
-                var username = $(this).val();
-                if(username=='输入密码'){
+                var password = $(this).val();
+                if(password=='输入密码'){
                     $(this).val('');
                 }
             });
 
 
-            $("#yzm").focus(function(){
-                var username = $(this).val();
-                if(username=='输入验证码'){
-                    $(this).val('');
-                }
-            });
-
-            $("#yzm").focusout(function(){
-                var username = $(this).val();
-                if(username==''){
-                    $(this).val('输入验证码');
-                }
-            });
+            // $("#yzm").focus(function(){
+            //     var username = $(this).val();
+            //     if(username=='输入验证码'){
+            //         $(this).val('');
+            //     }
+            // });
+            //
+            // $("#yzm").focusout(function(){
+            //     var username = $(this).val();
+            //     if(username==''){
+            //         $(this).val('输入验证码');
+            //     }
+            // });
 
 
 
@@ -84,7 +84,7 @@
 </head>
 <body>
 <div class="header">
-    <h1 class="headerLogo"><a title="秀发新闻网" target="_blank" href="#"><img alt="logo" src="images/1.jpg"></a></h1>
+    <h1 class="headerLogo"><a title="秀发新闻网" target="_blank" href="#"><img alt="logo" src="resources/css/user_admin/image/1.jpg"></a></h1>
     <div class="headerNav">
         <a target="_blank" href="#">企业官网</a>
         <a target="_blank" href="#">关于我们</a>
@@ -100,35 +100,35 @@
         <div id="o-box-down"  style="table-layout:fixed;">
             <div class="error-box"></div>
 
-            <form class="registerform"action="demo/ajax_post.jsp">
-                <div class="fm-item">
-                    <label for="logonId" class="form-label">用户账号：</label>
-                    <input type="text" value="输入账号" maxlength="100" id="username" class="i-text" ajaxurl="demo/valid.jsp"  datatype="s6-18" errormsg="用户名至少6个字符,最多18个字符！"  >
-                    <div class="ui-form-explain"></div>
-                </div>
+            <div class="fm-item">
+                <label for="userId" class="form-label">用户账号：</label>
+                <input type="text" placeholder="输入账号" maxlength="100" id="userId" class="i-text"  datatype="s6-18" errormsg="用户名至少6个字符,最多18个字符！"  >
+                <div class="ui-form-explain"></div>
+            </div>
 
-                <div class="fm-item">
-                    <label for="logonId" class="form-label">用户密码：</label>
-                    <input type="password" value="" maxlength="100" id="password" class="i-text" datatype="*15-16" nullmsg="请设置密码！" errormsg="密码范围在6~16位之间！">
-                    <div class="ui-form-explain"></div>
-                </div>
+            <div class="fm-item">
+                <label for="password" class="form-label">用户密码：</label>
+                <input type="password" value="" maxlength="100" id="password" class="i-text" datatype="*15-16" nullmsg="请输入密码！" errormsg="密码范围在6~16位之间！">
+                <div class="ui-form-explain"></div>
+            </div>
 
-                <!--<div class="fm-item pos-r">-->
-                    <!--<label for="logonId" class="form-label">验证码</label>-->
-                    <!--<input type="text" value="输入验证码" maxlength="100" id="yzm" class="i-text yzm" nullmsg="请输入验证码！" >-->
-                    <!--<div class="ui-form-explain"><img src="images/yzm.jpg" class="yzm-img" /></div>-->
-                <!--</div>-->
+            <!--<div class="fm-item pos-r">-->
+                <!--<label for="logonId" class="form-label">验证码</label>-->
+                <!--<input type="text" value="输入验证码" maxlength="100" id="yzm" class="i-text yzm" nullmsg="请输入验证码！" >-->
+                <!--<div class="ui-form-explain"><img src="images/yzm.jpg" class="yzm-img" /></div>-->
+            <!--</div>-->
 
-                <div class="fm-item">
-                    <label for="logonId" class="form-label"></label>
-                    <input type="submit" value="" tabindex="4" id="send-btn" class="btn-login">
-                    <div class="ui-form-explain"></div>
-                </div>
-                <div class="fm-item pos-r">
-                    <label for="logonId" class="form-label"><a href="sign-up.html" target="_blank" class="register">注册&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="index1.html" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;管理员登陆入口</a></label>
-                </div>
+            <div class="fm-item">
+                <label for="" class="form-label"></label>
+                <input type="submit" value="" tabindex="4" id="send-btn" class="btn-login">
+                <div class="ui-form-explain"></div>
+            </div>
+            <div class="fm-item pos-r">
+                <label for="logonId" class="form-label">
+                    <a href="sign-up.html" target="_blank" class="register">注册&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="index1.html" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;管理员登陆入口</a></label>
+            </div>
 
-            </form>
 
         </div>
 
@@ -136,7 +136,7 @@
     <div class="bd">
         <ul>
             <li style="background:url(resources/css/user_admin/theme/1.png) #CCE1F3 center 0 no-repeat;"><a target="_blank" href="#"></a></li>
-            <li style="background:url(themes/2.jpg) #BCE0FF center 0 no-repeat;"><a target="_blank" href="#"></a></li>
+            <li style="background:url(resources/css/user_admin/theme/2.jpg) #BCE0FF center 0 no-repeat;"><a target="_blank" href="#"></a></li>
         </ul>
     </div>
 
@@ -144,11 +144,7 @@
 </div>
 <script type="text/javascript">jQuery(".banner").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });</script>
 
-
+<script type="text/javascript" src="resources/js/user_admin/sign_in.js"></script>
 <div class="banner-shadow"></div>
-
-<div class="footer">
-    <p>Copyright &copy; 2014.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-</div>
 </body>
 </html>

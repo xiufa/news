@@ -18,18 +18,18 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int checkUserSingIn(String userID, String password) {
-        return userDao.queryUserSignIn(userID,password);
+    public int checkUserSingIn(String userId, String password) {
+        return userDao.queryUserSignIn(userId,password);
     }
 
     @Override
-    public int checkUserID(String userID) {
-        return userDao.queryUserById(userID);
+    public int checkUserId(String userId) {
+        return userDao.queryUserById(userId);
     }
 
     @Override
-    public User getUserDetail(String userID) {
-        return userDao.queryUser(userID);
+    public User getUserDetail(String userId) {
+        return userDao.queryUser(userId);
     }
 
     @Override

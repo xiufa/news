@@ -7,11 +7,11 @@ import java.util.List;
 public interface UserService {
     int addUser(User user);
 
-    int checkUserSingIn(String userID, String password);
+    int checkUserSingIn(String userId, String password);
 
-    int checkUserID(String userID);
+    int checkUserId(String userId);
 
-    User getUserDetail(String userID);
+    User getUserDetail(String userId);
 
     int modifyUser(User user);
 }
