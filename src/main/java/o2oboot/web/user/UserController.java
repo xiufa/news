@@ -21,9 +21,9 @@ public class UserController {
     @RequestMapping(value = "/checkUserId",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> checkUserId (HttpServletRequest request){
-        String userId=request.getParameter("userId");
+        String userID=request.getParameter("userID");
 
-        int s = userService.checkUserId(userId);
+        int s = userService.checkUserID(userID);
         Map<String,Object> map = new HashMap<>();
         if(s<1){
             map.put("success",false);
@@ -36,12 +36,12 @@ public class UserController {
     @RequestMapping(value = "/userSignUp",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> userSignUp (HttpServletRequest request){
-        String userId=request.getParameter("userId");
+        String userID=request.getParameter("userID");
         String userName=request.getParameter("username");
         String password=request.getParameter("password");
         String gender=request.getParameter("gender");
 
-        User user=new User(userId,userName,password,gender);
+        User user=new User(userID,userName,password,gender);
         int s=userService.addUser(user);
         Map<String,Object> map = new HashMap<>();
         if(s<1){
@@ -55,10 +55,10 @@ public class UserController {
     @RequestMapping(value = "/userSignIn",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> userSignIn (HttpServletRequest request){
-        String userId=request.getParameter("userId");
+        String userID=request.getParameter("userID");
         String password=request.getParameter("password");
 
-        int s=userService.checkUserSingIn(userId,password);
+        int s=userService.checkUserSingIn(userID,password);
         Map<String,Object> map = new HashMap<>();
         if(s<1){
             map.put("success",false);
@@ -71,7 +71,7 @@ public class UserController {
     @RequestMapping(value = "/userDetail",method = RequestMethod.POST)
     @ResponseBody
     public Map<String,Object> userDetail (HttpServletRequest request){
-        String userId=request.getParameter("userId");
+        String userID=request.getParameter("userID");
 
         User user=userService.getUserDetail(userID);
         Map<String,Object> map = new HashMap<>();
@@ -82,12 +82,12 @@ public class UserController {
     @RequestMapping(value = "/modifyUser",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> modifyUser (HttpServletRequest request){
-        String userId=request.getParameter("userId");
+        String userID=request.getParameter("userID");
         String userName=request.getParameter("username");
         String password=request.getParameter("password");
         String gender=request.getParameter("gender");
 
-        User user=new User(userId,userName,password,gender);
+        User user=new User(userID,userName,password,gender);
         int s=userService.modifyUser(user);
         Map<String,Object> map = new HashMap<>();
         if(s<1){
