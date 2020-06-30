@@ -1,10 +1,12 @@
-package o2oboot.entity;
+package o2oboot.entity.access;
 
 public class User {
     private String userId;
     private String username;
     private String password;
     private String gender;
+
+    private Role role;
 
     public User() {
     }
@@ -14,6 +16,14 @@ public class User {
         this.username = username;
         this.password = password;
         this.gender = gender;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
     }
 
     public String getUserId() {

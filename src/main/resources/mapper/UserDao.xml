@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="o2oboot.dao.UserDao">
-    <resultMap id="userMap" type="o2oboot.entity.User">
+    <resultMap id="userMap" type="o2oboot.entity.access.User">
         <id column="user_id" property="userID" jdbcType="VARCHAR"></id>
         <result column="username" property="username" jdbcType="VARCHAR"/>
         <result column="password" property="password" jdbcType="VARCHAR"/>
@@ -24,7 +24,7 @@
         from user
         where user_id=#{userID}
     </select>
-    <insert id="insertUser" parameterType="o2oboot.entity.User">
+    <insert id="insertUser" parameterType="o2oboot.entity.access.User">
         insert into user (
         user_id,username,password,gender
         )
@@ -35,7 +35,7 @@
         #{gender}
         )
     </insert>
-    <update id="updateUser" parameterType="o2oboot.entity.User">
+    <update id="updateUser" parameterType="o2oboot.entity.access.User">
         update user
         <set>
             <if test="user_id != null">user_id=#{userID}</if>

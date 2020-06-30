@@ -1,6 +1,6 @@
 package o2oboot.web.user;
 
-import o2oboot.entity.User;
+import o2oboot.entity.access.User;
 import o2oboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,17 +1,17 @@
 package o2oboot.service;
 
-import o2oboot.entity.User;
-
-import java.util.List;
+import o2oboot.entity.access.Role;
+import o2oboot.entity.access.User;
 
 public interface UserService {
     int addUser(User user);
 
-    int checkUserSingIn(String userID, String password);
+    int checkUserSingIn(Long userID, String password);
 
-    int checkUserID(String userID);
+    int checkUserID(Long userID);
 
-    User getUserDetail(String userID);
+    User getUserDetail(Long userID);
 
     int modifyUser(User user);
+    int addRole(User user, Role role);
 }
