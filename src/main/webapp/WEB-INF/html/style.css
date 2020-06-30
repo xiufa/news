@@ -13,12 +13,12 @@
 /* :: Import Fonts */
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700|Work+Sans:300,400,500,600,700");
 /* :: Import All CSS */
-@import url(../../../resources/css/news/bootstrap.min.css);
-@import url(../../../resources/css/news/animate.css);
-@import url(../../../resources/css/news/owl.carousel.css);
-@import url(../../../resources/css/news/magnific-popup.css);
-@import url(../../../resources/css/news/font-awesome.min.css);
-@import url(../../../resources/css/news/themify-icons.css);
+@import url(../../resources/css/news/bootstrap.min.css);
+@import url(../../resources/css/news/animate.css);
+@import url(../../resources/css/news/owl.carousel.css);
+@import url(../../resources/css/news/magnific-popup.css);
+@import url(../../resources/css/news/font-awesome.min.css);
+@import url(../../resources/css/news/themify-icons.css);
 /* :: Base CSS */
 * {
   margin: 0;
