@@ -1,5 +1,6 @@
 package o2oboot.web.news;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import o2oboot.dto.NewsExecution;
 import o2oboot.entity.News;
 import o2oboot.entity.NewsCategory;
@@ -10,9 +11,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -54,5 +57,29 @@ public class NewsAdminController {
         }
         return map;
     }
+
+
+
+    @RequestMapping(value="/addNews",method = RequestMethod.GET)
+    @ResponseBody
+    public Map<String,Object> addNews(@RequestParam("newsStr")String newsStr,HttpServletRequest request){
+        Map<String,Object> map=new HashMap<>();
+        newsStr=newsStr.trim();
+        ObjectMapper objectMapper=new ObjectMapper();
+        try {
+            News news=objectMapper.readValue(newsStr,News.class);
+            newsService.addNews(news);
+        } catch (IOException e) {
+            e.printStackTrace();
+//            System.out.println("错");
+            map.put("success",false);
+            map.put("errMsg",e.getMessage());
+            return map;
+        }
+
+        map.put("success",true);
+        return map;
+    }
+
 
 }
