@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6675cfe8-47f2-4cbf-bcda-6f6af52dec1b" name="Default Changelist" comment="commit Message">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6675cfe8-47f2-4cbf-bcda-6f6af52dec1b" name="Default Changelist" comment="commit Message" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +55,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/o2oboot/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -100,7 +98,7 @@
       <workItem from="1593311371086" duration="14405000" />
       <workItem from="1593386352060" duration="5658000" />
       <workItem from="1593422835366" duration="1704000" />
-      <workItem from="1593432481073" duration="1900000" />
+      <workItem from="1593432481073" duration="2000000" />
     </task>
     <task id="LOCAL-00001" summary="commit Message">
       <created>1593233616471</created>
@@ -165,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593433501088</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit Message">
+      <created>1593436260168</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1593436260168</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,10 +234,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="112" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1593412269653" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1593433504843">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1593436265018">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1593433504843" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1593436265018" />
     <state x="563" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593306159886">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
