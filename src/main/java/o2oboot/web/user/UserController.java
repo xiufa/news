@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -73,9 +75,11 @@ public class UserController {
     public Map<String,Object> userDetail (HttpServletRequest request){
         String userId=request.getParameter("userId");
 
-        User user=userService.getUserDetail(userID);
+        User user=userService.getUserDetail(userId);
+        List<User> list = new ArrayList<>();
+        list.add(user);
         Map<String,Object> map = new HashMap<>();
-        map.put("userDetail",user);
+        map.put("userDetail",list);
         return map;
     }
 
