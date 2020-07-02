@@ -12,4 +12,6 @@ public interface NewsDao {
     int queryNewsCount(News news);
     int updateNews(News news);
     List<News> queryAllNews();
+    int deleteNews(Long newsId);
+    News queryNewsByName(String newsName);
 }

@@ -4,7 +4,6 @@ public class Admin {
     private String adminId;
     private String adminPassword;
     private String adminName;
-    private String gender;
 
     public Admin() {
     }
@@ -13,7 +12,6 @@ public class Admin {
         this.adminId = adminID;
         this.adminPassword = adminPassword;
         this.adminName = adminName;
-        this.gender = gender;
     }
 
     public String getAdminId() {
@@ -40,11 +38,4 @@ public class Admin {
         this.adminName = adminName;
     }
 
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
 }

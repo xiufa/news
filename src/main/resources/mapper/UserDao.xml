@@ -7,17 +7,16 @@
         <id column="user_id" property="userID" jdbcType="VARCHAR"></id>
         <result column="username" property="username" jdbcType="VARCHAR"/>
         <result column="password" property="password" jdbcType="VARCHAR"/>
-        <result column="gender" property="gender" jdbcType="VARCHAR"/>
     </resultMap>
     <select id="queryUserById" parameterType="String" resultMap="userMap">
         select *
         from user
-        where user_id=#{userID}
+        where user_id=#{userId}
     </select>
     <select id="queryUserSignIn" resultMap="userMap" parameterType="String">
         select user_id,password
         from user
-        where user_id=#{userID} and password=#{password}
+        where user_id=#{userId} and password=#{password}
     </select>
     <select id="queryUser" resultMap="userMap" parameterType="String">
         select *
@@ -26,23 +25,21 @@
     </select>
     <insert id="insertUser" parameterType="o2oboot.entity.User">
         insert into user (
-        user_id,username,password,gender
+        user_id,username,password
         )
         values (
-        #{userID},
+        #{userId},
         #{username},
         #{password},
-        #{gender}
         )
     </insert>
     <update id="updateUser" parameterType="o2oboot.entity.User">
         update user
         <set>
-            <if test="user_id != null">user_id=#{userID}</if>
+            <if test="user_id != null">user_id=#{userId}</if>
             <if test="username != null">username=#{username}</if>
             <if test="password != null">password=#{password}</if>
-            <if test="gender != null">gender=#{gender}</if>
         </set>
-        where user_id=#{userID}
+        where user_id=#{userId}
     </update>
 </mapper>

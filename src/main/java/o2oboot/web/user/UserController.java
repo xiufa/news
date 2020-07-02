@@ -70,7 +70,7 @@ public class UserController {
         return map;
     }
 
-    @RequestMapping(value = "/userDetail",method = RequestMethod.POST)
+    @RequestMapping(value = "/userDetail",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> userDetail (HttpServletRequest request){
         String userId=request.getParameter("userId");

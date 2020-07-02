@@ -4,8 +4,7 @@ import o2oboot.dao.UserDao;
 import o2oboot.entity.User;
 import o2oboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.List;
+;
 
 public class UserServiceImpl implements UserService {
 

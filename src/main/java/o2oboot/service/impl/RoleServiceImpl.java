@@ -15,9 +15,6 @@ public class RoleServiceImpl implements RoleService {
     @Autowired
     private RoleDao roleDao;
 
-    @Autowired
-    private AccessRoleMapDao accessRoleMapDao;
-
     @Override
     public int addRole(Role role) {
         return roleDao.insertRole(role);
@@ -40,11 +37,23 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public int addRoleAccess(Role role, Access access) {
-        return accessRoleMapDao.addAccessRoleMap(access,role);
+        //List<Access> accesses=roleDao.queryAccessList(role.getRoleId());
+        List<Access> accesses=role.getAccesses();
+        accesses.add(access);
+        role.setAccesses(accesses);
+        return roleDao.updateRole(role);
     }
 
     @Override
     public int deleteRoleAccess(Role role, Access access) {
-        return accessRoleMapDao.deleteAccessRoleMap(access,role);
+        List<Access> accesses=role.getAccesses();
+        for(int i=0;i<accesses.size();i++){
+            Access a=accesses.get(i);
+            if(access.getAccessId()==a.getAccessId()){
+                accesses.remove(a);
+            }
+        }
+        role.setAccesses(accesses);
+        return roleDao.updateRole(role);
     }
 }

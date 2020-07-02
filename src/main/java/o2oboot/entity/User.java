@@ -4,7 +4,6 @@ public class User {
     private String userId;
     private String username;
     private String password;
-    private String gender;
 
     public User() {
     }
@@ -13,7 +12,6 @@ public class User {
         this.userId = userID;
         this.username = username;
         this.password = password;
-        this.gender = gender;
     }
 
     public String getUserId() {
@@ -40,11 +38,4 @@ public class User {
         this.password = password;
     }
 
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
 }

@@ -58,9 +58,7 @@ public class NewsAdminController {
         return map;
     }
 
-
-
-    @RequestMapping(value="/addNews",method = RequestMethod.GET)
+    @RequestMapping(value="/addNews",method = RequestMethod.POST)
     @ResponseBody
     public Map<String,Object> addNews(@RequestParam("newsStr")String newsStr,HttpServletRequest request){
         Map<String,Object> map=new HashMap<>();
@@ -81,5 +79,17 @@ public class NewsAdminController {
         return map;
     }
 
-
+    @RequestMapping(value="/deleteNews",method = RequestMethod.GET)
+    @ResponseBody
+    public Map<String,Object> deleteNews(HttpServletRequest request){
+        Long newsId= Long.valueOf(request.getParameter("userId"));
+        Map<String,Object> map=new HashMap<>();
+        int s=newsService.deleteNews(newsId);
+        if(s<1){
+            map.put("success",false);
+        }else {
+            map.put("success",true);
+        }
+        return map;
+    }
 }

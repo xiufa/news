@@ -14,6 +14,11 @@ public class NewsServiceImpl implements NewsService {
     private NewsDao newsDao;
 
     @Override
+    public int deleteNews(Long newsId) {
+        return newsDao.deleteNews(newsId);
+    }
+
+    @Override
     public int addNews(News news) {
         news.setCreateTime(new Date());
         return newsDao.insertNews(news);
@@ -54,5 +59,10 @@ public class NewsServiceImpl implements NewsService {
             newsExecution.setStateInfo("success");
         }
         return newsExecution;
+    }
+
+    @Override
+    public News getNewsByName(String newsName) {
+        return null;
     }
 }
