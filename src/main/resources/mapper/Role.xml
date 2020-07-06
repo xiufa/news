@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="o2oboot.dao.RoleDao">
+    <resultMap id="baseMap" type="o2oboot.entity.access.Role">
+        <id column="role_id" property="roleId"/>
+        <result column="role_name" property="roleName"/>
+        <result column="accesses" property="accesses"/>
+    </resultMap>
+    <insert id="inserRole" parameterType="o2oboot.entity.access.Role">
+        insert into role(role_id,role_name,accesses)
+        values (#{roleId},#{roleName},#{accesses})
+    </insert>
+    <select id="queryRoleById" resultMap="baseMap" parameterType="java.lang.Long">
+        select * from role
+        where role_id=#{roleId}
+    </select>
+    <update id="updateRole" parameterType="o2oboot.entity.access.Role">
+        update role
+        <set>
+            <if test="role_id!=null">role_id=#{roleId}</if>
+            <if test="role_name!=null">role_name=#{roleName}</if>
+            <if test="accesses!=null">accesses=#{accesses}</if>
+        </set>
+        where role_id=#{roleId}
+    </update>
+    <delete id="deleteRole" parameterType="java.lang.Long">
+        delete from role where role_id=#{roleId}
+    </delete>
+    <select id="queryAllRole" resultMap="baseMap">
+        select * from role
+    </select>
+</mapper>

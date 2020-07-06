@@ -10,7 +10,7 @@ import java.util.List;
 public interface NewsCategoryService {
     int addNewsCategory(NewsCategory newsCategory);
 
-    NewsCategoryExecution getAllFatherNewsCategory();
+//    NewsCategoryExecution getAllFatherNewsCategory();
     NewsCategoryExecution deleteNewsCategoryById(Long newsCategoryId);
 
     NewsCategoryExecution queryNewsCategoryByParent(NewsCategory newsCategory);

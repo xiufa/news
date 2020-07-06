@@ -31,8 +31,8 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Override
-    public int queryRole(Long roleId) {
-        return roleDao.deleteRoleById(roleId);
+    public Role queryRole(Long roleId) {
+        return roleDao.queryRoleById(roleId);
     }
 
     @Override
@@ -55,5 +55,10 @@ public class RoleServiceImpl implements RoleService {
         }
         role.setAccesses(accesses);
         return roleDao.updateRole(role);
+    }
+
+    @Override
+    public List<Role> queryAllRole() {
+        return roleDao.queryAllRole();
     }
 }

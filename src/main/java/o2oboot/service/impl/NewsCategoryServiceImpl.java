@@ -17,10 +17,10 @@ public class NewsCategoryServiceImpl implements NewsCategoryService {
         return newsCategoryDao.insertNewsCategory(newsCategory);
     }
 
-    @Override
-    public NewsCategoryExecution getAllFatherNewsCategory() {
-        return queryNewsCategoryByParent(null);
-    }
+//    @Override
+//    public NewsCategoryExecution getAllFatherNewsCategory() {
+//        return newsCategoryDao.queryNewsCategoryByParent(null);
+//    }
 
     @Override
     public NewsCategoryExecution deleteNewsCategoryById(Long newsCategoryId) {

@@ -11,5 +11,6 @@ public interface RoleDao {
     Role queryRoleById(Long roleId);
     int deleteRoleById(Long roleId);
     int updateRole(Role role);
-    //返回role表中的List<Access> accesses中的值
+
+    List<Role> queryAllRole();
 }

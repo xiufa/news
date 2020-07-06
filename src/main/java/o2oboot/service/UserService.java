@@ -14,4 +14,6 @@ public interface UserService {
     User getUserDetail(String userId);
 
     int modifyUser(User user);
+
+    List<User> queryAllUser();
 }

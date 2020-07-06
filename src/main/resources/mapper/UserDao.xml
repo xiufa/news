@@ -42,4 +42,7 @@
         </set>
         where user_id=#{userId}
     </update>
+    <select id="queryAllUser" resultMap="userMap">
+        select * from user
+    </select>
 </mapper>

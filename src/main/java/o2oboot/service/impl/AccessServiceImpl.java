@@ -5,6 +5,8 @@ import o2oboot.entity.access.Access;
 import o2oboot.service.AccessService;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 public class AccessServiceImpl implements AccessService {
 
     @Autowired
@@ -21,12 +23,17 @@ public class AccessServiceImpl implements AccessService {
     }
 
     @Override
-    public int deleteAccesss(Long accessId) {
+    public int deleteAccess(Long accessId) {
         return accessDao.deleteAccess(accessId);
     }
 
     @Override
-    public int queryAccessById(Long accessId) {
+    public Access queryAccessById(Long accessId) {
         return accessDao.queryAccessById(accessId);
+    }
+
+    @Override
+    public List<Access> queryAllAccess() {
+        return accessDao.queryAllAccess();
     }
 }
