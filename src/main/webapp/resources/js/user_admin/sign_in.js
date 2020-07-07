@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //检测账号是否存在
     $("#userId").blur(function () {
         let userId=$("#userId").val()
         $.ajax({
@@ -21,6 +22,7 @@ $(document).ready(function () {
             }
         })
     })
+    //验证登录
     $("#send-btn").click(function () {
         let userId=$("#userId").val()
         let password=$('#password').val()

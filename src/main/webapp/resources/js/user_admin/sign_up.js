@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //检测账号是否已经存在
     $("#semail").blur(function () {
         let email=$("#semail").val()
         $.ajax({
