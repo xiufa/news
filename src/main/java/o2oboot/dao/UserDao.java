@@ -7,9 +7,10 @@ import java.util.List;
 
 public interface UserDao {
     int insertUser(User user);
-    int queryUserSignIn(@Param("userId") String userId, @Param("password")String password);
-    int queryUserById(@Param("userId") String userId);
-    User queryUser(@Param("userId") String userId);
+    int queryUserSignIn(@Param("email") String email, @Param("password")String password);
+    int queryUserByEmail(@Param("email") String email);
+    User queryUser(@Param("userId") Long userId);
     int updateUser(User user);
     List<User> queryAllUser();
+    Long queryMaxUserId();
 }

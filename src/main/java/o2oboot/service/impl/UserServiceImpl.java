@@ -22,12 +22,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int checkUserId(String userId) {
-        return userDao.queryUserById(userId);
+    public int checkUserEmail(String email) {
+        return userDao.queryUserByEmail(email);
     }
 
     @Override
-    public User getUserDetail(String userId) {
+    public User getUserDetail(Long userId) {
         return userDao.queryUser(userId);
     }
 
@@ -39,5 +39,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> queryAllUser() {
         return userDao.queryAllUser();
+    }
+
+    @Override
+    public Long queryMaxUserId() {
+        return userDao.queryMaxUserId();
     }
 }

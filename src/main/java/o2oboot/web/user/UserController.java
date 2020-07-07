@@ -20,12 +20,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/checkUserId",method = RequestMethod.GET)
+    @RequestMapping(value = "/checkUserEmail",method = RequestMethod.GET)
     @ResponseBody
-    public Map<String,Object> checkUserId (HttpServletRequest request){
+    public Map<String,Object> checkUserEmail (HttpServletRequest request){
         String userId=request.getParameter("userId");
 
-        int s = userService.checkUserId(userId);
+        int s = userService.checkUserEmail(userId);
         Map<String,Object> map = new HashMap<>();
         if(s<1){
             map.put("success",false);
@@ -38,12 +38,12 @@ public class UserController {
     @RequestMapping(value = "/userSignUp",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> userSignUp (HttpServletRequest request){
-        String userId=request.getParameter("userId");
+        Long userId=userService.queryMaxUserId()+1;
+        String email=request.getParameter("email");
         String userName=request.getParameter("username");
         String password=request.getParameter("password");
-        String gender=request.getParameter("gender");
 
-        User user=new User(userId,userName,password,gender);
+        User user=new User(userId,userName,password,email);
         int s=userService.addUser(user);
         Map<String,Object> map = new HashMap<>();
         if(s<1){
@@ -57,10 +57,10 @@ public class UserController {
     @RequestMapping(value = "/userSignIn",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> userSignIn (HttpServletRequest request){
-        String userId=request.getParameter("userId");
+        String email=request.getParameter("email");
         String password=request.getParameter("password");
 
-        int s=userService.checkUserSingIn(userId,password);
+        int s=userService.checkUserSingIn(email,password);
         Map<String,Object> map = new HashMap<>();
         if(s<1){
             map.put("success",false);
@@ -73,7 +73,7 @@ public class UserController {
     @RequestMapping(value = "/userDetail",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> userDetail (HttpServletRequest request){
-        String userId=request.getParameter("userId");
+        Long userId= Long.valueOf(request.getParameter("userId"));
 
         User user=userService.getUserDetail(userId);
         List<User> list = new ArrayList<>();
@@ -86,12 +86,12 @@ public class UserController {
     @RequestMapping(value = "/modifyUser",method = RequestMethod.GET)
     @ResponseBody
     public Map<String,Object> modifyUser (HttpServletRequest request){
-        String userId=request.getParameter("userId");
+        Long userId= Long.valueOf(request.getParameter("userId"));
+        String email=request.getParameter("email");
         String userName=request.getParameter("username");
         String password=request.getParameter("password");
-        String gender=request.getParameter("gender");
 
-        User user=new User(userId,userName,password,gender);
+        User user=new User(userId,userName,password,email);
         int s=userService.modifyUser(user);
         Map<String,Object> map = new HashMap<>();
         if(s<1){

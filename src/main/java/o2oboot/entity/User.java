@@ -1,24 +1,26 @@
 package o2oboot.entity;
 
 public class User {
-    private String userId;
+    private Long userId;
     private String username;
+    private String email;
     private String password;
 
     public User() {
     }
 
-    public User(String userID, String username, String password, String gender) {
+    public User(Long userID, String username, String password, String email) {
         this.userId = userID;
         this.username = username;
         this.password = password;
+        this.email=email;
     }
 
-    public String getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
@@ -38,4 +40,11 @@ public class User {
         this.password = password;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
