@@ -28,7 +28,7 @@
     <tr>
 <!--        <th lay-data="{type:'checkbox', fixed: 'left'}"></th>-->
 <!--        <th lay-data="{field:'id', width:150, sort: true, fixed: true}">ID</th>-->
-        <th lay-data="{field:'power',edit: 'text'}">权限</th>
+        <th lay-data="{field:'power',edit: 'text' }"id="power">权限</th>
         <th lay-data="{field:'url',edit: 'text'}">Urls</th>
 <!--        <th lay-data="{field:'birth', width:150, sort: true}">生日</th>-->
         <th lay-data="{fixed: 'right', align:'center', toolbar: '#barDemo'}">操作</th>
@@ -37,7 +37,7 @@
 </table>
 
 <script type="text/html" id="barDemo">
-    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del" url="">删除</a>
 </script>
 
 
@@ -55,7 +55,10 @@
             var data = obj.data;
             if(obj.event === 'del'){
                 layer.confirm('真的删除行么', function(index){
+                    alert(data)
+
                     obj.del();
+                    // layer.closeAll("page")
                     layer.close(index);
                 });
             }

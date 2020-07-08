@@ -45,4 +45,12 @@ $(document).ready(function () {
             })
         })
     })
+    $("#sex").blur(function () {
+        let sex = $("#sex").val()
+        if(sex !="") {
+            if (sex != "男" && sex != "女") {
+                alert("性别只能是男或女!")
+            }
+        }
+    })
 })
